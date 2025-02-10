@@ -1,8 +1,5 @@
-flowchart TD
-
-A --> B --> C --> D
-D -- Continue --> E --> F --> G
-D -- Stop --> H
-G --> H
-H --> B
-
+flowchart LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
